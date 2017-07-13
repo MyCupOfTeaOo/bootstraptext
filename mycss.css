@@ -1,0 +1,209 @@
+/*去除点击阴影*/
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+/*init*/
+html {
+    font-size: 125%;
+    font-family: 宋体;
+    color: white;
+    font-weight:600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    margin: 0;
+}
+
+/*header*/
+header {
+    width: 100%;
+    background-color: #5AC0CE;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+header .b1,header .b2 {
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none !important;
+}
+header .b1 {
+    background-color: #53A8B4;
+    color: #ffffff;
+    margin-right: -5px;
+}
+header .b2 {
+    background-color: #ffffff;
+    color: #5AC0CE;
+}
+header .st {
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    width: 21px;
+    height: 22px;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url("sprite.png");
+    background-position: 0 -49px;
+    background-size: 61px;
+    cursor: pointer;
+    outline: none;
+}
+header .st:active{
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+/*main*/
+main{
+    width: 100%;
+    margin-top: 52px;
+    margin-bottom: 60.28px;
+}
+main .border1{
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+main .border2{
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+main .border3{
+    border: none;
+}
+main table{
+    width: 100%;
+    border-collapse: collapse;
+}
+main .tb{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #A2A2A2;
+}
+main tbody  .tr1{
+    font-size: 0.8rem;
+    color: #A2A2A2;
+    height: 50px;
+}
+main tbody .date{
+    width: 43px;
+}
+.date-view{
+    margin-left: 15px;
+    width: 19.5px;
+    height: 18px;
+    background-image: url("sprite.png");
+    background-position: -72px -19.5px;
+    background-repeat: no-repeat;
+    background-size: 91.5px;
+}
+main tbody .dateline{
+    font-size: 16px;
+    color: #000;
+}
+main tbody .price{
+    color: #ff0000;
+    font-size: 16px;
+    line-height: 16px;
+}
+main tbody .into{
+    background-color: white;
+    border: none;
+    color: #5AC0CE;
+    font-size: 1rem;
+    float: right;
+    cursor: pointer;
+}
+main tbody .into:active{
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+main tbody .tr3{
+    color: #A2A2A2;
+    font-size: 0.8rem;
+    height: 40px;
+}
+main tbody .place{
+    width: 16px;
+    height: 19px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    background-image: url("sprite.png");
+    background-repeat: no-repeat;
+    background-position: -72px 1px;
+    background-size: 91.5px;
+}
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #F8FAFB;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+footer .ft-middle{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 58px;
+    height: 58px;
+    background-image: url("sprite.png");
+    background-size: 75.274px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .ft-left{
+    padding-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+footer .ft-left .img{
+    width: 32px;
+    height: 27.6px;
+    background-repeat: no-repeat;
+    background-image: url("sprite.png");
+    background-size: 84.18px;
+    background-position: -30.36px -95.91px;
+}
+footer .ft-left .font{
+    margin-top: 10px;
+    color: #5AC0CE;
+    font-size: 0.6rem;
+    text-align: center;
+}
+footer .ft-right{
+    padding-top: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+footer .ft-right .img{
+    width: 30px;
+    height: 28.29px;
+    background-repeat: no-repeat;
+    background-image: url("sprite.png");
+    background-size: 84.18px;
+    background-position: -30.36px -66.24px;
+}
+footer .ft-right .font{
+    color: #A2A2A2;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 10px;
+}
+footer .ft-left:active,footer .ft-right:active,footer .ft-middle:active{
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
