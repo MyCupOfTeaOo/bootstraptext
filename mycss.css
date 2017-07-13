@@ -25,6 +25,7 @@ header {
     top: 0;
     display: flex;
     justify-content: center;
+    z-index: 99999;
 }
 header .b1,header .b2 {
     height: 2rem;
@@ -153,6 +154,7 @@ footer{
     bottom: 0;
     display: flex;
     justify-content: space-around;
+    z-index: 99999;
 }
 footer .ft-middle{
     margin-top: 1px;
@@ -206,4 +208,8 @@ footer .ft-right .font{
 footer .ft-left:active,footer .ft-right:active,footer .ft-middle:active{
     -webkit-filter: brightness(.5);
     filter: brightness(.5);
+}
+
+.of{
+    overflow: hidden;
 }
